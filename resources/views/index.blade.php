@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.default-layout')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
-    </head>
-    <body>
-      <h1>Ciao</h1>
-    </body>
-</html>
+@section('section')
+  <div class="content">
+    @foreach ($books as $book)
+      <div class="book">
+        <h3>Title: {{ $book -> title }}</h3>
+        <p>Description: {{ $book -> description }}</p>
+        <h3>Author: {{ $book -> author}}</h3>
+      </div>
+    @endforeach
+  </div>
+@endsection
