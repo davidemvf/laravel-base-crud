@@ -7,12 +7,18 @@
 .book {
   @include boxes;
   width: 170px;
-  height: 300px;
+  // height: 300px;
   margin-top: 20px;
 
   p {
     font-size: 15px;
     margin: 10px 0;
+  }
+
+  a {
+    @include boxes;
+    display: inline-block;
+    margin-top: 20px;
   }
 }
 
