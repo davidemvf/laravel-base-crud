@@ -10,6 +10,7 @@
         <h3>{{ $book -> title }}</h3>
         <p>{{ $book -> description }}</p>
         <h3>{{ $book -> author}}</h3>
+        <a href="{{ route('book.edit', $book -> id) }}">Update</a>
       </div>
     @endforeach
   </div>
