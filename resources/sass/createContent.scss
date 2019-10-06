@@ -1,0 +1,17 @@
+.form {
+  @include boxes;
+  width: 30%;
+  margin-top: 20px;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      @include boxes;
+      margin-top: 20px;
+      width: 30%;
+      align-self: center;
+    }
+  }
+}

@@ -4,9 +4,12 @@
       @include('elem.head')
     </head>
     <body>
-      <header>
-        <h1>{{$type}}</h1>
-      </header>
-      @yield('section')
+      <div class="container">
+        <header>
+          <h1>{{$type}}</h1>
+        </header>
+        @yield('section')
+        <footer></footer>
+      </div>
     </body>
 </html>

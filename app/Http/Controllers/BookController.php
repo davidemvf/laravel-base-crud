@@ -26,7 +26,8 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+      $type = 'Add new book';
+      return view('bookCreate', compact('type'));
     }
 
     /**
@@ -37,7 +38,14 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validateData = $request -> validate([
+          'title' => 'required',
+          'description' => 'required',
+          'author' => 'required'
+        ]);
+
+        $books = Book::create($validateData);
+        return redirect('/books');
     }
 
     /**

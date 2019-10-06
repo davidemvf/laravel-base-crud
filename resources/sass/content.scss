@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book {
+  @include boxes;
+  width: 170px;
+  height: 300px;
+  margin-top: 20px;
+
+  p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+}
+
+.add {
+  @include boxes;
+  width: 170px;
+  text-align: center;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+}

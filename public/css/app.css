@@ -1,4 +1,87 @@
+header {
+  color: white;
+  font-size: 20px;
+  background: #2a78b4;
+  padding: 10px 15px;
+}
+
 h1 {
-  color: red;
+  letter-spacing: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book {
+  color: white;
+  background: #2a78b4;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 6px;
+  width: 170px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.book p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.add {
+  color: white;
+  background: #2a78b4;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 6px;
+  width: 170px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add a {
+  text-decoration: none;
+  color: white;
+}
+
+.form {
+  color: white;
+  background: #2a78b4;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 6px;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form form button {
+  color: white;
+  background: #2a78b4;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 6px;
+  margin-top: 20px;
+  width: 30%;
+  align-self: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
