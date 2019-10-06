@@ -19,5 +19,7 @@
       <button type="submit" name="button">Add</button>
     </form>
   </div>
-  <a href="{{ route('book.index') }}"></a>
+  <div class="add">
+    <a href="{{ route('book.index') }}">Back</a>
+  </div>
 @endsection
